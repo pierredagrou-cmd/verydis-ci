@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nos activités | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(135deg,var(--orange) 0 50%,var(--green) 50%);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{color:var(--orange)}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:35px;
+line-height:1.15;
+margin-bottom:15px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:780px;
+}
+
+section{padding:75px 0}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.card{
+border:1px solid #e5ebe7;
+border-radius:20px;
+padding:32px;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.number{
+font-size:15px;
+font-weight:bold;
+color:var(--orange);
+}
+
+.card h3{
+font-size:25px;
+margin:8px 0 12px;
+}
+
+.card p{
+color:var(--gray);
+}
+
+.light{background:var(--light)}
+
+.cta{
+background:var(--dark);
+color:white;
+border-radius:25px;
+padding:42px;
+}
+
+.cta p{color:#d4dfd8}
+
+.button{
+display:inline-block;
+margin-top:22px;
+padding:13px 22px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:800px){
+.menu{display:none}
+.cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+</div>
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">VERYDIS CI</div>
+
+<h1>Nos activités</h1>
+
+<p class="lead">
+VERYDIS CI intervient dans plusieurs domaines afin de
+faciliter les échanges, coordonner les acteurs et
+accompagner la réalisation de projets et d'opérations.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div style="max-width:750px;margin-bottom:40px;">
+
+<div class="eyebrow">Notre savoir-faire</div>
+
+<h2>
+Des activités complémentaires autour de l'intermédiation.
+</h2>
+
+<p style="color:var(--gray);">
+Notre intervention peut être adaptée à la nature du besoin,
+au secteur concerné et aux objectifs du client ou du partenaire.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="number">01 — INTERMÉDIATION</div>
+
+<h3>
+Mettre les bons acteurs en relation
+</h3>
+
+<p>
+Identification d'interlocuteurs, rapprochement des besoins
+et des offres, recherche d'opportunités et facilitation
+des relations professionnelles.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="number">02 — FACILITATION</div>
+
+<h3>
+Simplifier les démarches
+</h3>
+
+<p>
+Appui dans les échanges, orientation vers les interlocuteurs
+appropriés et accompagnement des différentes étapes
+d'une démarche ou d'un projet.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="number">03 — COORDINATION</div>
+
+<h3>
+Faire travailler les acteurs ensemble
+</h3>
+
+<p>
+Organisation et suivi des interventions de différents
+prestataires, partenaires ou parties prenantes autour
+d'un objectif commun.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="number">04 — COMMERCIALISATION</div>
+
+<h3>
+Développer les opportunités commerciales
+</h3>
+
+<p>
+Promotion et mise en relation autour de biens,
+services et solutions, dans le respect des besoins
+et des intérêts des parties concernées.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="number">05 — SERVICES</div>
+
+<h3>
+Apporter des réponses pratiques
+</h3>
+
+<p>
+Recherche, organisation et coordination de services
+adaptés aux besoins des entreprises, organisations,
+professionnels et particuliers.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="number">06 — ACCOMPAGNEMENT</div>
+
+<h3>
+Transformer une idée en action
+</h3>
+
+<p>
+Analyse du besoin, orientation, mobilisation des
+interlocuteurs et suivi des actions nécessaires
+à l'avancement du projet.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="light">
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">Votre besoin</div>
+
+<h2>
+Vous recherchez un interlocuteur capable de coordonner
+plusieurs étapes ?
+</h2>
+
+<p>
+Expliquez-nous votre besoin. VERYDIS CI peut vous aider
+à identifier les acteurs, solutions ou services adaptés
+à votre situation.
+</p>
+
+<a href="contact.html" class="button">
+Présenter votre projet
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>VERYDIS CI</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
