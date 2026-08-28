@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Partenaires | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:35px;
+line-height:1.15;
+margin-bottom:18px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:800px;
+}
+
+section{
+padding:75px 0;
+}
+
+.intro{
+max-width:800px;
+margin-bottom:40px;
+}
+
+.intro p{
+color:var(--gray);
+}
+
+.partners{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+border:1px solid #e5ebe7;
+border-radius:20px;
+padding:30px;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.icon{
+font-size:34px;
+margin-bottom:12px;
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.card p{
+color:var(--gray);
+}
+
+.light{
+background:var(--light);
+}
+
+.principles{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:35px;
+}
+
+.principle{
+background:white;
+border:1px solid #e5ebe7;
+border-radius:16px;
+padding:23px;
+}
+
+.principle strong{
+display:block;
+color:var(--orange);
+font-size:22px;
+margin-bottom:8px;
+}
+
+.principle p{
+color:var(--gray);
+font-size:14px;
+}
+
+.cta{
+background:var(--dark);
+color:white;
+border-radius:25px;
+padding:42px;
+}
+
+.cta p{
+color:#d4dfd8;
+}
+
+.button{
+display:inline-block;
+margin-top:22px;
+padding:13px 22px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.partners{
+grid-template-columns:1fr 1fr;
+}
+
+.principles{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.partners,
+.principles{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+Écosystème
+</div>
+
+<h1>
+Nos partenaires
+</h1>
+
+<p class="lead">
+VERYDIS CI développe progressivement un réseau
+d'entreprises, de professionnels, d'organisations
+et d'acteurs capables de contribuer à la réalisation
+des projets et des besoins qui lui sont confiés.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+Un réseau au service des projets
+</div>
+
+<h2>
+La force d'un projet réside aussi dans la qualité de son réseau.
+</h2>
+
+<p>
+Selon la nature de la demande, VERYDIS CI peut rechercher,
+mobiliser ou mettre en relation différents types d'acteurs.
+Notre objectif est de créer des collaborations utiles,
+claires et adaptées aux besoins identifiés.
+</p>
+
+</div>
+
+
+<div class="partners">
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>
+Entreprises
+</h3>
+
+<p>
+Entreprises de services, fournisseurs, opérateurs
+économiques et acteurs commerciaux pouvant contribuer
+à une opération ou à un projet.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">👨‍💼</div>
+
+<h3>
+Professionnels
+</h3>
+
+<p>
+Experts, consultants, prestataires et professionnels
+disposant de compétences spécifiques nécessaires
+à une démarche.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>
+Institutions & organisations
+</h3>
+
+<p>
+Organisations, structures professionnelles et acteurs
+institutionnels pouvant apporter leur expertise,
+leur orientation ou leur concours.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌍</div>
+
+<h3>
+Réseaux internationaux
+</h3>
+
+<p>
+Acteurs établis en Côte d'Ivoire, en France ou
+dans d'autres territoires permettant de développer
+des passerelles et des opportunités.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤝</div>
+
+<h3>
+Partenaires opérationnels
+</h3>
+
+<p>
+Prestataires et intervenants pouvant être mobilisés
+pour contribuer à la réalisation concrète d'une
+mission ou d'un projet.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💡</div>
+
+<h3>
+Partenaires de solutions
+</h3>
+
+<p>
+Acteurs proposant des biens, services, technologies
+ou solutions correspondant aux besoins identifiés.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="light">
+
+<div class="container">
+
+<div class="eyebrow">
+Nos principes de partenariat
+</div>
+
+<h2>
+Construire des relations utiles et durables.
+</h2>
+
+
+<div class="principles">
+
+
+<div class="principle">
+
+<strong>01</strong>
+
+<h3>
+Clarté
+</h3>
+
+<p>
+Définir clairement les rôles,
+les besoins et les objectifs.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<strong>02</strong>
+
+<h3>
+Complémentarité
+</h3>
+
+<p>
+Associer des compétences qui
+se renforcent mutuellement.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<strong>03</strong>
+
+<h3>
+Fiabilité
+</h3>
+
+<p>
+Privilégier des relations
+professionnelles responsables.
+</p>
+
+</div>
+
+
+<div class="principle">
+
+<strong>04</strong>
+
+<h3>
+Résultats
+</h3>
+
+<p>
+Orienter les collaborations
+vers des objectifs concrets.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">
+Vous souhaitez collaborer ?
+</div>
+
+<h2>
+Devenons partenaires.
+</h2>
+
+<p>
+Si votre entreprise, organisation ou expertise peut
+contribuer aux projets de VERYDIS CI ou si vous
+souhaitez proposer une collaboration, nous pouvons
+échanger sur les possibilités de partenariat.
+</p>
+
+<a href="contact.html" class="button">
+Proposer un partenariat
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
