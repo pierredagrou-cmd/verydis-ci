@@ -1,685 +1,997 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>VERYDIS CI | Intermédiation, Facilitation & Services</title>
-
-  <meta
-    name="description"
-    content="VERYDIS CI accompagne les entreprises, organisations et porteurs de projets par l’intermédiation, la facilitation, la coordination et les services."
-  >
-
-  <style>
-    :root {
-      --orange: #f58220;
-      --green: #159447;
-      --dark: #10251b;
-      --light: #f5f9f6;
-      --white: #ffffff;
-      --gray: #65736b;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--dark);
-      line-height: 1.6;
-      background: var(--white);
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1150px;
-      margin: auto;
-    }
-
-    /* BARRE SUPÉRIEURE */
-
-    .topbar {
-      background: var(--dark);
-      color: white;
-      padding: 8px 0;
-      font-size: 13px;
-    }
-
-    .topbar .container {
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-    }
-
-    /* NAVIGATION */
-
-    header {
-      background: white;
-      border-bottom: 1px solid #e5ebe7;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav {
-      min-height: 75px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 900;
-      font-size: 20px;
-    }
-
-    .logo-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: linear-gradient(
-        135deg,
-        var(--orange) 0 50%,
-        var(--green) 50%
-      );
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-    }
-
-    .menu {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .menu a:hover {
-      color: var(--orange);
-    }
-
-    /* HERO */
-
-    .hero {
-      background: linear-gradient(
-        135deg,
-        white,
-        #f3faf6
-      );
-
-      padding: 95px 0 80px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      color: var(--green);
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-size: 13px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 6vw, 78px);
-      line-height: 1.02;
-      margin: 15px 0 25px;
-    }
-
-    h1 span {
-      color: var(--orange);
-    }
-
-    .hero-text {
-      font-size: 19px;
-      color: var(--gray);
-      max-width: 680px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 30px;
-      font-weight: 800;
-    }
-
-    .primary {
-      background: var(--orange);
-      color: white;
-    }
-
-    .secondary {
-      border: 1px solid #dce5df;
-      background: white;
-    }
-
-    /* CARTE */
-
-    .hero-card {
-      background: white;
-      padding: 35px;
-      border-radius: 25px;
-      box-shadow: 0 15px 45px rgba(16, 37, 27, 0.09);
-      border: 1px solid #e5ebe7;
-    }
-
-    .hero-card .big {
-      font-size: 65px;
-      font-weight: 900;
-      color: var(--green);
-      margin: 15px 0;
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 80px 0;
-    }
-
-    .light {
-      background: var(--light);
-    }
-
-    .section-title {
-      max-width: 750px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: clamp(30px, 4vw, 48px);
-      line-height: 1.1;
-      margin: 10px 0 15px;
-    }
-
-    .section-title p {
-      color: var(--gray);
-      font-size: 17px;
-    }
-
-    /* CARTES */
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e5ebe7;
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: 0 8px 25px rgba(16, 37, 27, 0.04);
-    }
-
-    .icon {
-      font-size: 30px;
-    }
-
-    .card h3 {
-      margin: 12px 0 8px;
-      font-size: 22px;
-    }
-
-    .card p {
-      color: var(--gray);
-    }
-
-    /* STATS */
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-
-    .stat {
-      background: white;
-      border: 1px solid #e5ebe7;
-      padding: 25px;
-      border-radius: 16px;
-    }
-
-    .stat strong {
-      font-size: 30px;
-      display: block;
-      color: var(--green);
-    }
-
-    /* CONTACT */
-
-    .contact {
-      background: var(--dark);
-      color: white;
-      border-radius: 25px;
-      padding: 45px;
-    }
-
-    .contact p {
-      color: #d3dfd8;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #09150f;
-      color: #cbd8d0;
-      padding: 50px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 30px;
-    }
-
-    footer h3 {
-      color: white;
-      margin-bottom: 15px;
-    }
-
-    footer a:hover {
-      color: white;
-    }
-
-    .copyright {
-      border-top: 1px solid #ffffff20;
-      margin-top: 35px;
-      padding-top: 20px;
-      font-size: 13px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 850px) {
-
-      .topbar .container {
-        display: block;
-        text-align: center;
-      }
-
-      .menu {
-        display: none;
-      }
-
-      .hero {
-        padding: 65px 0;
-      }
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .cards {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stats {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 550px) {
-
-      .cards,
-      .stats,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 44px;
-      }
-
-      section {
-        padding: 60px 0;
-      }
-
-      .contact {
-        padding: 30px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VERYDIS CI | Intermédiation, facilitation, coordination et services</title>
+
+<meta name="description" content="VERYDIS CI accompagne les entreprises, professionnels, organisations et porteurs de projets par l'intermédiation, la facilitation, la coordination et les services.">
+
+<style>
+
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+--white:#ffffff;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+/* NAVIGATION */
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+white-space:nowrap;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:15px;
+font-size:13px;
+font-weight:bold;
+flex-wrap:wrap;
+justify-content:flex-end;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+/* HERO */
+
+.hero{
+background:
+linear-gradient(
+135deg,
+#f5f9f6 0%,
+#ffffff 55%,
+#fff6ee 100%
+);
+padding:100px 0 90px;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(44px,7vw,78px);
+line-height:1.02;
+margin:15px 0 25px;
+max-width:950px;
+}
+
+.lead{
+color:var(--gray);
+font-size:20px;
+max-width:820px;
+}
+
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.button{
+display:inline-block;
+padding:14px 24px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+.button.secondary{
+background:white;
+color:var(--green);
+border:2px solid var(--green);
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+max-width:800px;
+margin-bottom:40px;
+}
+
+h2{
+font-size:clamp(30px,4vw,44px);
+line-height:1.15;
+margin:10px 0 15px;
+}
+
+.section-title p{
+color:var(--gray);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+border:1px solid #e5ebe7;
+border-radius:20px;
+padding:28px;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.icon{
+font-size:34px;
+margin-bottom:12px;
+}
+
+.card h3{
+font-size:21px;
+margin-bottom:9px;
+}
+
+.card p{
+color:var(--gray);
+font-size:15px;
+}
+
+/* DARK SECTION */
+
+.dark{
+background:var(--dark);
+color:white;
+}
+
+.dark p{
+color:#d4dfd8;
+}
+
+/* BRIDGE */
+
+.bridge{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:stretch;
+}
+
+.bridge-card{
+border-radius:24px;
+padding:40px;
+background:var(--light);
+}
+
+.bridge-card.dark-card{
+background:var(--dark);
+color:white;
+}
+
+.bridge-card p{
+color:var(--gray);
+}
+
+.bridge-card.dark-card p{
+color:#d4dfd8;
+}
+
+.flag{
+font-size:45px;
+margin-bottom:10px;
+}
+
+/* SECTORS */
+
+.sectors{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.sector{
+padding:25px;
+border-radius:18px;
+background:var(--light);
+}
+
+.sector h3{
+margin-bottom:7px;
+}
+
+.sector p{
+color:var(--gray);
+font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+background:var(--orange);
+color:white;
+border-radius:25px;
+padding:50px;
+}
+
+.cta p{
+max-width:750px;
+margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:50px 0 25px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:35px;
+margin-bottom:35px;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+footer p{
+font-size:14px;
+}
+
+.footer-links{
+display:flex;
+flex-direction:column;
+gap:8px;
+font-size:14px;
+}
+
+.footer-links a:hover{
+color:var(--orange);
+}
+
+.copyright{
+border-top:1px solid rgba(255,255,255,.1);
+padding-top:20px;
+font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+.menu{
+gap:10px;
+}
+
+}
+
+@media(max-width:750px){
+
+nav{
+padding:12px 0;
+align-items:flex-start;
+}
+
+.menu{
+display:none;
+}
+
+.hero{
+padding:70px 0;
+}
+
+.bridge,
+.sectors{
+grid-template-columns:1fr;
+}
+
+.services{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.cta{
+padding:35px 25px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <div class="topbar">
-    <div class="container">
-      <span>VERYDIS CI</span>
-      <span>Côte d’Ivoire • France</span>
-    </div>
-  </div>
 
-  <header>
-    <div class="container">
-      <nav>
+<header>
 
-        <a href="index.html" class="logo">
-          <span class="logo-icon">V</span>
-          <span>VERYDIS CI</span>
-        </a>
+<div class="container">
 
-        <div class="menu">
-          <a href="index.html">Accueil</a>
-          <a href="a-propos.html">À propos</a>
-          <a href="activites.html">Activités</a>
-          <a href="solutions.html">Solutions</a>
-          <a href="secteurs.html">Secteurs</a>
-          <a href="implantation.html">Implantation</a>
-          <a href="contact.html">Contact</a>
-        </div>
+<nav>
 
-      </nav>
-    </div>
-  </header>
+<a href="index.html" class="logo">
 
-  <main>
+<span class="logo-icon">
+V
+</span>
 
-    <section class="hero">
+VERYDIS CI
 
-      <div class="container hero-grid">
+</a>
 
-        <div>
 
-          <div class="eyebrow">
-            VERYDIS CI
-          </div>
+<div class="menu">
 
-          <h1>
-            Relier les opportunités.
-            <span>Créer de la valeur.</span>
-          </h1>
+<a href="index.html">Accueil</a>
 
-          <p class="hero-text">
-            VERYDIS CI accompagne les entreprises, organisations
-            et porteurs de projets par l’intermédiation,
-            la facilitation, la coordination et les services.
-          </p>
+<a href="a-propos.html">
+À propos
+</a>
 
-          <div class="buttons">
+<a href="activites.html">
+Activités
+</a>
 
-            <a class="button primary" href="contact.html">
-              Parlons de votre projet
-            </a>
+<a href="solutions.html">
+Solutions
+</a>
 
-            <a class="button secondary" href="activites.html">
-              Découvrir nos activités
-            </a>
+<a href="secteurs.html">
+Secteurs
+</a>
 
-          </div>
+<a href="implantation.html">
+Implantation
+</a>
 
-        </div>
+<a href="partenaires.html">
+Partenaires
+</a>
 
-        <div class="hero-card">
+<a href="actualites.html">
+Actualités
+</a>
 
-          <div class="eyebrow">
-            Notre positionnement
-          </div>
+<a href="contact.html">
+Contact
+</a>
 
-          <div class="big">
-            CI ↔ FR
-          </div>
+</div>
 
-          <h3>
-            Une passerelle entre acteurs,
-            projets et solutions.
-          </h3>
+</nav>
 
-          <p>
-            Une approche pragmatique, structurée
-            et orientée vers l’action.
-          </p>
+</div>
 
-        </div>
+</header>
 
-      </div>
 
-    </section>
+<main>
 
 
-    <section>
+<!-- HERO -->
 
-      <div class="container">
+<section class="hero">
 
-        <div class="section-title">
+<div class="container">
 
-          <div class="eyebrow">
-            Notre cœur de métier
-          </div>
+<div class="eyebrow">
+VERYDIS CI
+</div>
 
-          <h2>
-            Des solutions pour faire avancer les projets.
-          </h2>
+<h1>
+Créer des passerelles.<br>
+Faciliter les projets.
+</h1>
 
-          <p>
-            Nous intervenons là où la mise en relation,
-            la facilitation et la coordination permettent
-            de gagner du temps et de créer de la valeur.
-          </p>
+<p class="lead">
+VERYDIS CI développe des solutions d'intermédiation,
+de facilitation, de coordination et de services pour
+connecter les besoins aux bons interlocuteurs.
+</p>
 
-        </div>
+<div class="buttons">
 
+<a href="contact.html" class="button">
+Présenter votre besoin
+</a>
 
-        <div class="cards">
+<a href="activites.html" class="button secondary">
+Découvrir nos activités
+</a>
 
-          <article class="card">
+</div>
 
-            <div class="icon">🤝</div>
+</div>
 
-            <h3>
-              Intermédiation
-            </h3>
+</section>
 
-            <p>
-              Mise en relation d’acteurs, identification
-              d’opportunités et rapprochement des besoins
-              avec les solutions adaptées.
-            </p>
 
-          </article>
+<!-- POSITIONNEMENT -->
 
+<section>
 
-          <article class="card">
+<div class="container">
 
-            <div class="icon">🧭</div>
+<div class="section-title">
 
-            <h3>
-              Facilitation
-            </h3>
+<div class="eyebrow">
+Notre positionnement
+</div>
 
-            <p>
-              Appui aux démarches, échanges,
-              relations professionnelles et parcours
-              opérationnels.
-            </p>
+<h2>
+Un intermédiaire entre les besoins, les acteurs et les solutions.
+</h2>
 
-          </article>
+<p>
+VERYDIS CI intervient lorsque la compréhension d'un
+besoin, l'identification des bons interlocuteurs,
+la mise en relation et la coordination peuvent
+contribuer à faire avancer un projet.
+</p>
 
+</div>
 
-          <article class="card">
 
-            <div class="icon">⚙️</div>
+<div class="services">
 
-            <h3>
-              Coordination
-            </h3>
 
-            <p>
-              Organisation des intervenants,
-              suivi des actions et circulation
-              efficace de l’information.
-            </p>
+<div class="card">
 
-          </article>
+<div class="icon">
+🤝
+</div>
 
-        </div>
+<h3>
+Intermédiation
+</h3>
 
-      </div>
+<p>
+Identifier et mettre en relation les acteurs
+susceptibles de répondre à un besoin ou de
+contribuer à une opportunité.
+</p>
 
-    </section>
+</div>
 
 
-    <section class="light">
+<div class="card">
 
-      <div class="container">
+<div class="icon">
+🧭
+</div>
 
-        <div class="stats">
+<h3>
+Facilitation
+</h3>
 
-          <div class="stat">
-            <strong>CI</strong>
-            Ancrage en Côte d’Ivoire
-          </div>
+<p>
+Faciliter les échanges, l'orientation et les
+démarches entre les différentes parties prenantes.
+</p>
 
-          <div class="stat">
-            <strong>FR</strong>
-            Ouverture vers la France
-          </div>
+</div>
 
-          <div class="stat">
-            <strong>360°</strong>
-            Vision service
-          </div>
 
-          <div class="stat">
-            <strong>1</strong>
-            Point de contact
-          </div>
+<div class="card">
 
-        </div>
+<div class="icon">
+⚙️
+</div>
 
-      </div>
+<h3>
+Coordination
+</h3>
 
-    </section>
+<p>
+Organiser les interactions entre plusieurs
+intervenants afin de favoriser une meilleure
+exécution des opérations.
+</p>
 
+</div>
 
-    <section>
 
-      <div class="container">
+<div class="card">
 
-        <div class="contact">
+<div class="icon">
+💡
+</div>
 
-          <div class="eyebrow">
-            Passons à l’action
-          </div>
+<h3>
+Services
+</h3>
 
-          <h2>
-            Vous avez un besoin,
-            un projet ou une opportunité ?
-          </h2>
+<p>
+Mobiliser ou orienter vers des biens, services,
+compétences et solutions adaptés aux besoins
+identifiés.
+</p>
 
-          <p>
-            Présentez-nous votre objectif.
-            Nous vous orienterons vers la solution
-            ou les interlocuteurs adaptés.
-          </p>
+</div>
 
-          <div class="buttons">
 
-            <a class="button primary" href="contact.html">
-              Nous contacter
-            </a>
+</div>
 
-          </div>
+</div>
 
-        </div>
+</section>
 
-      </div>
 
-    </section>
+<!-- COTE D'IVOIRE FRANCE -->
 
-  </main>
+<section class="dark">
 
+<div class="container">
 
-  <footer>
+<div class="section-title">
 
-    <div class="container">
+<div class="eyebrow">
+Notre ouverture
+</div>
 
-      <div class="footer-grid">
+<h2>
+Côte d'Ivoire ↔ France ↔ International
+</h2>
 
-        <div>
+<p>
+VERYDIS CI développe des passerelles entre les
+territoires, les entreprises, les professionnels,
+les organisations et les porteurs de projets.
+</p>
 
-          <h3>VERYDIS CI</h3>
+</div>
 
-          <p>
-            Intermédiation, facilitation,
-            coordination, commercialisation
-            et services.
-          </p>
 
-        </div>
+<div class="bridge">
 
 
-        <div>
+<div class="bridge-card dark-card">
 
-          <h3>Navigation</h3>
+<div class="flag">
+🇨🇮
+</div>
 
-          <p><a href="a-propos.html">À propos</a></p>
-          <p><a href="activites.html">Activités</a></p>
-          <p><a href="solutions.html">Solutions</a></p>
-          <p><a href="contact.html">Contact</a></p>
+<h3>
+Côte d'Ivoire
+</h3>
 
-        </div>
+<p>
+Un ancrage au cœur d'un environnement économique
+dynamique et d'un marché offrant de nombreuses
+possibilités de collaboration et de développement.
+</p>
 
+</div>
 
-        <div>
 
-          <h3>Implantation</h3>
+<div class="bridge-card dark-card">
 
-          <p>
-            Côte d’Ivoire 🇨🇮
-          </p>
+<div class="flag">
+🇫🇷
+</div>
 
-          <p>
-            France 🇫🇷
-          </p>
+<h3>
+France & international
+</h3>
 
-        </div>
+<p>
+Une ouverture permettant de créer des connexions
+avec des entreprises, professionnels, réseaux et
+acteurs établis en France et au-delà.
+</p>
 
-      </div>
+</div>
 
 
-      <div class="copyright">
+</div>
 
-        © 2026 VERYDIS CI —
-        Tous droits réservés.
+</div>
 
-      </div>
+</section>
 
-    </div>
 
-  </footer>
+<!-- SECTEURS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Secteurs
+</div>
+
+<h2>
+Des interventions dans plusieurs univers.
+</h2>
+
+<p>
+Notre approche est transversale : elle s'adapte au
+contexte, au besoin et aux acteurs concernés.
+</p>
+
+</div>
+
+
+<div class="sectors">
+
+
+<div class="sector">
+
+<h3>
+🏢 Entreprises & services
+</h3>
+
+<p>
+Mise en relation, recherche de prestataires
+et facilitation d'opérations.
+</p>
+
+</div>
+
+
+<div class="sector">
+
+<h3>
+🏗️ Immobilier & foncier
+</h3>
+
+<p>
+Facilitation entre porteurs de projets,
+professionnels et acteurs concernés.
+</p>
+
+</div>
+
+
+<div class="sector">
+
+<h3>
+🌾 Agriculture
+</h3>
+
+<p>
+Relations et opportunités autour des projets
+agricoles et agro-industriels.
+</p>
+
+</div>
+
+
+<div class="sector">
+
+<h3>
+🌍 Diaspora & coopération
+</h3>
+
+<p>
+Création de passerelles entre acteurs
+de différents territoires.
+</p>
+
+</div>
+
+
+<div class="sector">
+
+<h3>
+🚚 Commerce & distribution
+</h3>
+
+<p>
+Mise en relation et facilitation autour
+de biens et services.
+</p>
+
+</div>
+
+
+<div class="sector">
+
+<h3>
+💻 Numérique & solutions
+</h3>
+
+<p>
+Orientation vers des solutions et
+compétences adaptées aux besoins.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACTUALITES -->
+
+<section style="background:var(--light);">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+Actualités
+</div>
+
+<h2>
+VERYDIS CI en mouvement.
+</h2>
+
+<p>
+Retrouvez les informations, projets, collaborations
+et évolutions de l'entreprise.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🚀 Développement de VERYDIS CI
+</h3>
+
+<p>
+Structuration progressive de l'offre autour de
+l'intermédiation, de la facilitation, de la
+coordination et des services.
+</p>
+
+<a
+href="actualites.html"
+style="display:inline-block;margin-top:15px;color:var(--green);font-weight:bold;"
+>
+Voir toutes les actualités →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow" style="color:white;">
+Votre projet
+</div>
+
+<h2>
+Vous avez un besoin ?
+</h2>
+
+<p>
+Présentez-nous votre projet, votre recherche,
+votre opportunité ou votre besoin. Nous étudierons
+la meilleure manière de vous orienter.
+</p>
+
+<a href="contact.html" class="button" style="background:white;color:var(--orange);">
+Nous contacter
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:12px;">
+Côte d'Ivoire 🇨🇮 • France 🇫🇷 • International
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Navigation
+</h3>
+
+<div class="footer-links">
+
+<a href="index.html">
+Accueil
+</a>
+
+<a href="a-propos.html">
+À propos
+</a>
+
+<a href="activites.html">
+Activités
+</a>
+
+<a href="solutions.html">
+Solutions
+</a>
+
+<a href="secteurs.html">
+Secteurs
+</a>
+
+<a href="implantation.html">
+Implantation
+</a>
+
+<a href="partenaires.html">
+Partenaires
+</a>
+
+<a href="actualites.html">
+Actualités
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+Informations
+</h3>
+
+<div class="footer-links">
+
+<a href="mentions-legales.html">
+Mentions légales
+</a>
+
+<a href="confidentialite.html">
+Confidentialité
+</a>
+
+<a href="contact.html">
+Nous contacter
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 VERYDIS CI — Tous droits réservés.
+
+</div>
+
+</div>
+
+</footer>
+
 
 </body>
 </html>
