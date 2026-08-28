@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nos solutions | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:35px;
+line-height:1.15;
+margin-bottom:18px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:780px;
+}
+
+section{
+padding:75px 0;
+}
+
+.intro{
+max-width:780px;
+margin-bottom:40px;
+}
+
+.intro p{
+color:var(--gray);
+}
+
+.solutions{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+border:1px solid #e5ebe7;
+border-radius:20px;
+padding:30px;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.card-number{
+color:var(--orange);
+font-weight:bold;
+font-size:14px;
+}
+
+.card h3{
+font-size:23px;
+margin:9px 0 12px;
+}
+
+.card p{
+color:var(--gray);
+}
+
+.process{
+background:var(--light);
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
+.step{
+background:white;
+padding:25px;
+border-radius:18px;
+border:1px solid #e5ebe7;
+}
+
+.step strong{
+display:block;
+font-size:28px;
+color:var(--green);
+margin-bottom:8px;
+}
+
+.cta{
+background:var(--dark);
+color:white;
+border-radius:25px;
+padding:42px;
+}
+
+.cta p{
+color:#d4dfd8;
+}
+
+.button{
+display:inline-block;
+margin-top:22px;
+padding:13px 22px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.solutions{
+grid-template-columns:1fr 1fr;
+}
+
+.steps{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.solutions,
+.steps{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+VERYDIS CI
+</div>
+
+<h1>
+Nos solutions
+</h1>
+
+<p class="lead">
+Des réponses adaptées aux besoins des entreprises,
+organisations, professionnels et porteurs de projets,
+avec une approche fondée sur l'intermédiation,
+la facilitation et la coordination.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+Une approche sur mesure
+</div>
+
+<h2>
+Une solution commence par une bonne compréhension du besoin.
+</h2>
+
+<p>
+Chaque situation est différente. Notre rôle est d'identifier
+le besoin, de rechercher les interlocuteurs ou ressources
+pertinents et de faciliter la mise en œuvre de la solution.
+</p>
+
+</div>
+
+
+<div class="solutions">
+
+
+<div class="card">
+
+<div class="card-number">
+01 — MISE EN RELATION
+</div>
+
+<h3>
+Trouver le bon interlocuteur
+</h3>
+
+<p>
+Faciliter la rencontre entre un besoin identifié et
+un professionnel, une entreprise, une organisation
+ou un partenaire susceptible d'y répondre.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">
+02 — ACCOMPAGNEMENT
+</div>
+
+<h3>
+Structurer les démarches
+</h3>
+
+<p>
+Aider à clarifier les étapes, identifier les priorités
+et organiser les échanges nécessaires à l'avancement
+d'un projet.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">
+03 — COORDINATION
+</div>
+
+<h3>
+Connecter les intervenants
+</h3>
+
+<p>
+Faciliter la collaboration entre plusieurs acteurs
+lorsqu'une opération nécessite plusieurs compétences
+ou prestataires.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">
+04 — RECHERCHE
+</div>
+
+<h3>
+Identifier des opportunités
+</h3>
+
+<p>
+Rechercher des informations, acteurs, offres ou
+opportunités correspondant aux critères définis
+avec le client ou le partenaire.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">
+05 — SERVICES
+</div>
+
+<h3>
+Organiser une réponse pratique
+</h3>
+
+<p>
+Mobiliser et coordonner les ressources nécessaires
+pour apporter une réponse adaptée à un besoin
+spécifique.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-number">
+06 — DÉVELOPPEMENT
+</div>
+
+<h3>
+Créer des passerelles
+</h3>
+
+<p>
+Favoriser les échanges économiques et professionnels
+entre acteurs en Côte d'Ivoire, en France et
+à l'international.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="process">
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+Notre méthode
+</div>
+
+<h2>
+De la demande à l'action.
+</h2>
+
+<p>
+Une démarche simple permettant de transformer
+un besoin clairement identifié en actions coordonnées.
+</p>
+
+</div>
+
+
+<div class="steps">
+
+
+<div class="step">
+
+<strong>01</strong>
+
+<h3>
+Écouter
+</h3>
+
+<p>
+Comprendre précisément le besoin,
+le contexte et l'objectif.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<strong>02</strong>
+
+<h3>
+Analyser
+</h3>
+
+<p>
+Identifier les possibilités,
+contraintes et interlocuteurs pertinents.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<strong>03</strong>
+
+<h3>
+Connecter
+</h3>
+
+<p>
+Mettre en relation les acteurs
+nécessaires à la démarche.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<strong>04</strong>
+
+<h3>
+Coordonner
+</h3>
+
+<p>
+Faciliter le suivi des actions
+et l'avancement du projet.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">
+Votre projet
+</div>
+
+<h2>
+Vous ne savez pas encore quelle solution choisir ?
+</h2>
+
+<p>
+Décrivez simplement votre besoin.
+Nous pouvons commencer par l'analyser et vous orienter
+vers la démarche la plus pertinente.
+</p>
+
+<a href="contact.html" class="button">
+Nous contacter
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
