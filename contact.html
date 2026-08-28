@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:34px;
+line-height:1.15;
+margin-bottom:15px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:780px;
+}
+
+section{
+padding:75px 0;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:35px;
+align-items:start;
+}
+
+.info{
+background:var(--dark);
+color:white;
+border-radius:24px;
+padding:35px;
+}
+
+.info p{
+color:#d4dfd8;
+}
+
+.info-block{
+margin-top:25px;
+}
+
+.info-block strong{
+display:block;
+color:white;
+margin-bottom:4px;
+}
+
+.form-card{
+border:1px solid #e5ebe7;
+border-radius:24px;
+padding:35px;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+label{
+display:block;
+font-weight:bold;
+margin-bottom:7px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:14px;
+border:1px solid #dce5df;
+border-radius:10px;
+font-family:inherit;
+font-size:15px;
+margin-bottom:20px;
+background:white;
+}
+
+textarea{
+min-height:150px;
+resize:vertical;
+}
+
+.button{
+display:inline-block;
+border:none;
+cursor:pointer;
+padding:14px 24px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+font-size:15px;
+}
+
+.note{
+background:var(--light);
+padding:22px;
+border-radius:14px;
+margin-top:25px;
+color:var(--gray);
+font-size:14px;
+}
+
+.cta{
+background:var(--light);
+border-radius:25px;
+padding:40px;
+}
+
+.cta p{
+color:var(--gray);
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:850px){
+
+.menu{
+display:none;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+VERYDIS CI
+</div>
+
+<h1>
+Contactez-nous
+</h1>
+
+<p class="lead">
+Vous avez un besoin, un projet, une opportunité
+ou recherchez un interlocuteur en Côte d'Ivoire,
+en France ou à l'international ? Présentez-nous
+votre demande.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="contact-grid">
+
+
+<div class="info">
+
+<div class="eyebrow">
+Échangeons
+</div>
+
+<h2>
+Parlons de votre besoin.
+</h2>
+
+<p>
+Chaque demande commence par une bonne compréhension
+du besoin. Nous pouvons ensuite identifier l'orientation,
+les interlocuteurs ou les solutions susceptibles de
+répondre à votre situation.
+</p>
+
+
+<div class="info-block">
+
+<strong>Intermédiation</strong>
+
+<p>
+Mise en relation et recherche d'interlocuteurs.
+</p>
+
+</div>
+
+
+<div class="info-block">
+
+<strong>Facilitation</strong>
+
+<p>
+Orientation et accompagnement des démarches.
+</p>
+
+</div>
+
+
+<div class="info-block">
+
+<strong>Coordination</strong>
+
+<p>
+Organisation et suivi des différents intervenants.
+</p>
+
+</div>
+
+
+<div class="info-block">
+
+<strong>Zone de connexion</strong>
+
+<p>
+Côte d'Ivoire 🇨🇮 • France 🇫🇷 • International
+</p>
+
+</div>
+
+</div>
+
+
+<div class="form-card">
+
+<div class="eyebrow">
+Votre demande
+</div>
+
+<h2>
+Présentez votre projet
+</h2>
+
+<form action="#" method="post">
+
+<label for="nom">
+Nom et prénom
+</label>
+
+<input
+type="text"
+id="nom"
+name="nom"
+placeholder="Votre nom et prénom"
+>
+
+
+<label for="email">
+Adresse e-mail
+</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="votre@email.com"
+>
+
+
+<label for="organisation">
+Entreprise / Organisation
+</label>
+
+<input
+type="text"
+id="organisation"
+name="organisation"
+placeholder="Nom de votre entreprise ou organisation"
+>
+
+
+<label for="objet">
+Objet de votre demande
+</label>
+
+<select id="objet" name="objet">
+
+<option value="">
+Sélectionnez une option
+</option>
+
+<option>
+Intermédiation
+</option>
+
+<option>
+Facilitation
+</option>
+
+<option>
+Coordination
+</option>
+
+<option>
+Recherche d'un partenaire
+</option>
+
+<option>
+Projet / Opportunité
+</option>
+
+<option>
+Autre demande
+</option>
+
+</select>
+
+
+<label for="message">
+Votre message
+</label>
+
+<textarea
+id="message"
+name="message"
+placeholder="Décrivez votre besoin ou votre projet..."
+></textarea>
+
+
+<button type="submit" class="button">
+Envoyer la demande
+</button>
+
+</form>
+
+
+<div class="note">
+
+<strong>
+À noter :
+</strong>
+
+Le formulaire sera connecté à la messagerie
+professionnelle de VERYDIS CI lors de la mise
+en place définitive du système de contact.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">
+VERYDIS CI
+</div>
+
+<h2>
+Une demande précise permet une meilleure orientation.
+</h2>
+
+<p>
+Lorsque cela est possible, indiquez votre objectif,
+le contexte, le territoire concerné et le résultat
+recherché. Ces informations nous permettront de
+mieux comprendre votre demande.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
