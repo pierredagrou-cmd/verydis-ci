@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secteurs d'intervention | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:35px;
+line-height:1.15;
+margin-bottom:18px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:800px;
+}
+
+section{
+padding:75px 0;
+}
+
+.intro{
+max-width:800px;
+margin-bottom:40px;
+}
+
+.intro p{
+color:var(--gray);
+}
+
+.sectors{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.card{
+border:1px solid #e5ebe7;
+border-radius:20px;
+padding:30px;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.icon{
+font-size:32px;
+margin-bottom:12px;
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.card p{
+color:var(--gray);
+}
+
+.light{
+background:var(--light);
+}
+
+.note{
+background:white;
+border-left:5px solid var(--orange);
+padding:25px;
+border-radius:12px;
+}
+
+.cta{
+background:var(--dark);
+color:white;
+border-radius:25px;
+padding:42px;
+}
+
+.cta p{
+color:#d4dfd8;
+}
+
+.button{
+display:inline-block;
+margin-top:22px;
+padding:13px 22px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.sectors{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.sectors{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+VERYDIS CI
+</div>
+
+<h1>
+Secteurs d'intervention
+</h1>
+
+<p class="lead">
+VERYDIS CI peut intervenir dans différents secteurs
+d'activité lorsque l'intermédiation, la facilitation,
+la coordination ou la recherche de solutions peuvent
+apporter une réelle valeur ajoutée.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+Un champ d'intervention transversal
+</div>
+
+<h2>
+Des compétences mobilisables dans plusieurs univers.
+</h2>
+
+<p>
+Notre approche n'est pas limitée à un secteur unique.
+Elle repose avant tout sur notre capacité à comprendre
+un besoin, identifier les acteurs pertinents et
+faciliter la mise en œuvre d'une solution.
+</p>
+
+</div>
+
+
+<div class="sectors">
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>
+Entreprises & services
+</h3>
+
+<p>
+Mise en relation professionnelle, recherche de
+prestataires, facilitation d'opérations et
+coordination de services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏗️</div>
+
+<h3>
+Immobilier & foncier
+</h3>
+
+<p>
+Facilitation des échanges entre porteurs de projets,
+professionnels, propriétaires et autres acteurs
+intervenant dans les opérations immobilières.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌾</div>
+
+<h3>
+Agriculture & agro-industrie
+</h3>
+
+<p>
+Mise en relation et facilitation autour de projets,
+producteurs, organisations, partenaires et solutions
+liées au développement agricole.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌍</div>
+
+<h3>
+Diaspora & coopération
+</h3>
+
+<p>
+Création de passerelles entre acteurs établis en
+Côte d'Ivoire, en France et à l'international.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚚</div>
+
+<h3>
+Commerce & distribution
+</h3>
+
+<p>
+Recherche d'opportunités, mise en relation commerciale
+et facilitation autour de biens et services.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>
+Numérique & solutions
+</h3>
+
+<p>
+Orientation vers des solutions numériques, prestataires
+et compétences pouvant répondre aux besoins identifiés.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>
+Institutions & organisations
+</h3>
+
+<p>
+Facilitation des échanges et orientation vers les
+interlocuteurs appropriés dans le cadre de projets
+ou démarches nécessitant plusieurs acteurs.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎯</div>
+
+<h3>
+Projets & investissements
+</h3>
+
+<p>
+Accompagnement de la mise en relation autour
+d'opportunités et de projets nécessitant
+plusieurs compétences ou partenaires.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤝</div>
+
+<h3>
+Autres besoins spécifiques
+</h3>
+
+<p>
+Lorsque votre besoin ne correspond pas à une catégorie
+précise, nous pouvons commencer par l'analyser afin
+d'identifier l'orientation appropriée.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="light">
+
+<div class="container">
+
+<div class="note">
+
+<div class="eyebrow">
+Notre principe
+</div>
+
+<h2>
+Le secteur n'est pas la seule variable.
+</h2>
+
+<p>
+Chaque demande est étudiée selon son contexte,
+ses objectifs, les acteurs concernés et les
+solutions réellement disponibles. VERYDIS CI
+privilégie donc une approche personnalisée
+plutôt qu'une réponse standardisée.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">
+Votre activité
+</div>
+
+<h2>
+Votre secteur n'apparaît pas ici ?
+</h2>
+
+<p>
+Cela ne signifie pas que nous ne pouvons pas vous
+orienter. Présentez-nous simplement votre besoin
+et nous étudierons la possibilité d'une intervention
+ou d'une mise en relation adaptée.
+</p>
+
+<a href="contact.html" class="button">
+Présenter votre besoin
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
