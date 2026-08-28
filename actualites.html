@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actualités | VERYDIS CI</title>
+
+<style>
+:root{
+--orange:#f58220;
+--green:#159447;
+--dark:#10251b;
+--light:#f5f9f6;
+--gray:#65736b;
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:var(--dark);
+line-height:1.7;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:92%;
+max-width:1150px;
+margin:auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5ebe7;
+}
+
+nav{
+min-height:75px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:900;
+}
+
+.logo-icon{
+width:42px;
+height:42px;
+border-radius:12px;
+background:linear-gradient(
+135deg,
+var(--orange) 0 50%,
+var(--green) 50%
+);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:900;
+}
+
+.menu{
+display:flex;
+gap:18px;
+font-size:14px;
+font-weight:bold;
+}
+
+.menu a:hover{
+color:var(--orange);
+}
+
+.hero{
+background:var(--light);
+padding:75px 0;
+}
+
+.eyebrow{
+color:var(--green);
+font-weight:bold;
+text-transform:uppercase;
+letter-spacing:2px;
+font-size:13px;
+}
+
+h1{
+font-size:clamp(40px,6vw,70px);
+line-height:1.05;
+margin:15px 0;
+}
+
+h2{
+font-size:35px;
+line-height:1.15;
+margin-bottom:18px;
+}
+
+.lead{
+color:var(--gray);
+font-size:18px;
+max-width:800px;
+}
+
+section{
+padding:75px 0;
+}
+
+.intro{
+max-width:800px;
+margin-bottom:40px;
+}
+
+.intro p{
+color:var(--gray);
+}
+
+.news{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+.article{
+border:1px solid #e5ebe7;
+border-radius:20px;
+overflow:hidden;
+background:white;
+box-shadow:0 8px 25px rgba(16,37,27,.05);
+}
+
+.article-top{
+height:120px;
+background:var(--light);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:42px;
+}
+
+.article-content{
+padding:25px;
+}
+
+.date{
+font-size:12px;
+font-weight:bold;
+color:var(--orange);
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+.article h3{
+font-size:22px;
+margin:8px 0 10px;
+line-height:1.25;
+}
+
+.article p{
+color:var(--gray);
+font-size:15px;
+}
+
+.status{
+display:inline-block;
+margin-top:18px;
+padding:6px 12px;
+border-radius:20px;
+background:var(--light);
+color:var(--green);
+font-size:12px;
+font-weight:bold;
+}
+
+.light{
+background:var(--light);
+}
+
+.cta{
+background:var(--dark);
+color:white;
+border-radius:25px;
+padding:42px;
+}
+
+.cta p{
+color:#d4dfd8;
+}
+
+.button{
+display:inline-block;
+margin-top:22px;
+padding:13px 22px;
+border-radius:30px;
+background:var(--orange);
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#09150f;
+color:#cbd8d0;
+padding:45px 0;
+}
+
+footer h3{
+color:white;
+margin-bottom:10px;
+}
+
+@media(max-width:900px){
+
+.menu{
+display:none;
+}
+
+.news{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.news{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<a href="index.html" class="logo">
+<span class="logo-icon">V</span>
+VERYDIS CI
+</a>
+
+<div class="menu">
+
+<a href="index.html">Accueil</a>
+<a href="a-propos.html">À propos</a>
+<a href="activites.html">Activités</a>
+<a href="solutions.html">Solutions</a>
+<a href="secteurs.html">Secteurs</a>
+<a href="implantation.html">Implantation</a>
+<a href="partenaires.html">Partenaires</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main>
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+VERYDIS CI
+</div>
+
+<h1>
+Actualités
+</h1>
+
+<p class="lead">
+Retrouvez ici les informations, annonces,
+évolutions, projets et initiatives de VERYDIS CI
+et de son écosystème.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+Journal VERYDIS CI
+</div>
+
+<h2>
+L'activité de VERYDIS CI en mouvement.
+</h2>
+
+<p>
+Cette rubrique a vocation à présenter progressivement
+les actualités et informations officielles de
+l'entreprise, ses projets, ses collaborations et
+les opportunités liées à son développement.
+</p>
+
+</div>
+
+
+<div class="news">
+
+
+<article class="article">
+
+<div class="article-top">
+🚀
+</div>
+
+<div class="article-content">
+
+<div class="date">
+2026 — Développement
+</div>
+
+<h3>
+Développement de VERYDIS CI
+</h3>
+
+<p>
+VERYDIS CI poursuit la structuration de son offre
+autour de l'intermédiation, de la facilitation,
+de la coordination et des services.
+</p>
+
+<span class="status">
+En développement
+</span>
+
+</div>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-top">
+🌍
+</div>
+
+<div class="article-content">
+
+<div class="date">
+2026 — International
+</div>
+
+<h3>
+Développement des passerelles Côte d'Ivoire — France
+</h3>
+
+<p>
+L'entreprise développe progressivement son réseau
+et ses relations entre la Côte d'Ivoire, la France
+et son environnement international.
+</p>
+
+<span class="status">
+En cours
+</span>
+
+</div>
+
+</article>
+
+
+<article class="article">
+
+<div class="article-top">
+🤝
+</div>
+
+<div class="article-content">
+
+<div class="date">
+2026 — Partenariats
+</div>
+
+<h3>
+Construction de l'écosystème de partenaires
+</h3>
+
+<p>
+VERYDIS CI développe des relations avec des
+entreprises, professionnels, organisations et
+acteurs susceptibles de contribuer aux projets.
+</p>
+
+<span class="status">
+En développement
+</span>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="light">
+
+<div class="container">
+
+<div class="intro">
+
+<div class="eyebrow">
+À venir
+</div>
+
+<h2>
+Un journal appelé à s'enrichir.
+</h2>
+
+<p>
+Les prochaines publications pourront notamment
+présenter les nouveaux partenariats, projets,
+événements, offres, réalisations et informations
+importantes de VERYDIS CI.
+</p>
+
+</div>
+
+
+<div style="background:white;padding:30px;border-radius:20px;border:1px solid #e5ebe7;">
+
+<h3>
+Publications officielles
+</h3>
+
+<p style="color:var(--gray);margin-top:8px;">
+Cette rubrique sera mise à jour au fur et à mesure
+des actualités validées par VERYDIS CI.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<div class="eyebrow">
+Une information à partager ?
+</div>
+
+<h2>
+Vous souhaitez entrer en relation avec VERYDIS CI ?
+</h2>
+
+<p>
+Pour une demande professionnelle, une proposition
+de partenariat ou une opportunité, utilisez notre
+page de contact.
+</p>
+
+<a href="contact.html" class="button">
+Nous contacter
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<h3>
+VERYDIS CI
+</h3>
+
+<p>
+Intermédiation • Facilitation • Coordination • Services
+</p>
+
+<p style="margin-top:20px;font-size:13px;">
+© 2026 VERYDIS CI — Tous droits réservés.
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
